@@ -1,0 +1,4 @@
+# dsh-meme-wiki：宿主层挂一行。只给主智能体装工具。
+- insert:
+    - id: dsh-meme-wiki
+      name: dsh-meme-wiki

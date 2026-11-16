@@ -1,0 +1,48 @@
+{
+  "name": "dsh-meme-wiki",
+  "version": "0.1.0",
+  "description": "梗wiki（cnmeme.wiki）查询：6932 条中文网络梗的出处与用法。先查再决定用不用，查不到就不编。",
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "meme",
+    "cnmeme",
+    "chinese-internet"
+  ],
+  "license": "MIT",
+  "author": "Baimacao",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Baimacao/dsh-meme-wiki.git"
+  },
+  "homepage": "https://github.com/Baimacao/dsh-meme-wiki#readme",
+  "bugs": {
+    "url": "https://github.com/Baimacao/dsh-meme-wiki/issues"
+  },
+  "engines": {
+    "node": ">=22",
+    "dsh": ">=0.2.1-rc.1 <0.3.0-0"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-home-paths": ">=0.2.1-rc.1 <0.3.0-0",
+    "@deepseek-ai/dsh-tools": ">=0.2.1-rc.1 <0.3.0-0",
+    "@deepseek-ai/schemastery": "^3.18.4"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
